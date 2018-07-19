@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+
+	<body>
+		<input multiple="" type="file" id="id-input-file-3" />
+
+		<script src="../../jquery.min.js"></script>
+		<script src="ace-elements.min.js"></script>
+		
+		<script type="text/javascript">
+			jQuery(function($) {
+				$('#id-input-file-3').ace_file_input({
+					style:'well',
+					btn_change:null,
+					droppable:true,
+					thumbnail:'small'//large | fit
+				}).on('change', function(){
+					//console.log($(this).data('ace_input_files'));
+					//console.log($(this).data('ace_input_method'));
+				});
+			});
+		</script>
+</body>
+</html>
